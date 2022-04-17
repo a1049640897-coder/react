@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Routes, Route, Link, BrowserRouter } from "react-router-dom";
-import Home from "@/views"
+import List from "@/views/list"
 
 const App = () => {
     return (
         <BrowserRouter >
             <Routes>
-                <Route path="/" element={<Home />}></Route>
+                <Route path="/"  element={<List />}></Route>
             </Routes>
         </BrowserRouter>
     )
