@@ -7,7 +7,8 @@ function test(props) {
    const counter = useSelector(selectCount)
    const dispatch = useDispatch()
    const navigateTo  = useNavigate ()
-   const params = { name:'title',age:'20' }
+   const params = { name:'title',age:'202' }
+   
    const add = () =>{
     dispatch(increment())
    } 
@@ -15,9 +16,8 @@ function test(props) {
     dispatch(decrement())
    }   
    const toList = () =>{
-  navigateTo('/list',{ state:params })
-   }
-      // View: UI 定义
+  navigateTo('/list',{ state:params }) 
+      // View: UI 定义 4545
   return (
     <div className="container">
       <div>
@@ -27,10 +27,11 @@ function test(props) {
           <button onClick={ del }>-</button>
         </div>
         <div onClick={ toList }>
-          跳转到外部页面
+          跳转到外部页面sdsdsadas
         </div>
       </div>
     </div>
   )
   }
+}
 export default test
