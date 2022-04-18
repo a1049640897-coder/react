@@ -9,7 +9,7 @@ const App = () => {
         <BrowserRouter >
             <Routes>
                 <Route path="/"  element={<List />}></Route>
-                <Route path="/posts/:id"  element={<SingeList />}></Route>
+                <Route path="/posts/:postId"  element={<SingeList />}></Route>
             </Routes>
         </BrowserRouter> 
     )
